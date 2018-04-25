@@ -1,0 +1,9 @@
+h2 All players
+
+- if players.any?
+  #players
+    - players.each do |player|
+        .player
+          h3= player.name
+- else
+  p.placeholder There are no players yet.
