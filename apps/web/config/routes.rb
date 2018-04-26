@@ -5,4 +5,4 @@
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
 
 root to: 'home#index'
-get '/players', to: 'players#index'
+resources :players, only: [:index, :new, :create]
